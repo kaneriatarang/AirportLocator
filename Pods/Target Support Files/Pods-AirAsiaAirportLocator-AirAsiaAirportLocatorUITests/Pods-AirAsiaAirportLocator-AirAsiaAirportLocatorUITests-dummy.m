@@ -1,0 +1,5 @@
+#import <Foundation/Foundation.h>
+@interface PodsDummy_Pods_AirAsiaAirportLocator_AirAsiaAirportLocatorUITests : NSObject
+@end
+@implementation PodsDummy_Pods_AirAsiaAirportLocator_AirAsiaAirportLocatorUITests
+@end
