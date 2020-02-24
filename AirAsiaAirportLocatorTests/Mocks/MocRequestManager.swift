@@ -9,12 +9,13 @@
 import Foundation
 @testable import AirAsiaAirportLocator
 
+// MARK: - Request Manager Mock
 class MockRequestManager: RequestManager {
 
-     var getAirportResult: RequestManager.GetAirportResult?
+    var getAirportResult: RequestManager.GetAirportResult?
 
-     override func getAirportLocations(latitude: Double, longitude:Double, completion: @escaping RequestManager.GetAirportCompletion) {
-         completion(getAirportResult!)
-     }
+    override func getAirportLocations(latitude: Double, longitude:Double, completion: @escaping RequestManager.GetAirportCompletion) {
+        completion(getAirportResult!)
+    }
 
- }
+}

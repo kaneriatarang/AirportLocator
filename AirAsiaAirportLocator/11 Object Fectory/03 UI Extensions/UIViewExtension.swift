@@ -26,7 +26,7 @@ extension UIView {
     }
 
     fileprivate struct AssociatedObjectKeys {
-        static var tapGestureRecognizer = "MediaViewerAssociatedObjectKey_mediaViewer"
+        static var tapGestureRecognizer = "AssociatedObjectKey_Viewer"
     }
 
     fileprivate typealias Action = (() -> Void)?

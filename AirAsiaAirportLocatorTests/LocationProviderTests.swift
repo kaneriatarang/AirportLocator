@@ -11,6 +11,7 @@ import Quick
 import Nimble
 @testable import AirAsiaAirportLocator
 
+// MARK: - Location Provider Tests case
 class LocationProviderTests: QuickSpec {
 
     override func spec() {

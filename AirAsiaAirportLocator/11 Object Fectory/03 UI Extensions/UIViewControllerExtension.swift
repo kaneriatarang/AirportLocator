@@ -14,23 +14,23 @@ extension UIViewController {
 
         let viewController = viewController ?? UIWindow.key?.rootViewController
 
-           if let navigationController = viewController as? UINavigationController,
-               !navigationController.viewControllers.isEmpty
-           {
-               return self.topViewController(navigationController.viewControllers.last)
+        if let navigationController = viewController as? UINavigationController,
+            !navigationController.viewControllers.isEmpty
+        {
+            return self.topViewController(navigationController.viewControllers.last)
 
-           } else if let tabBarController = viewController as? UITabBarController,
-               let selectedController = tabBarController.selectedViewController
-           {
-               return self.topViewController(selectedController)
+        } else if let tabBarController = viewController as? UITabBarController,
+            let selectedController = tabBarController.selectedViewController
+        {
+            return self.topViewController(selectedController)
 
-           } else if let presentedController = viewController?.presentedViewController {
-               return self.topViewController(presentedController)
+        } else if let presentedController = viewController?.presentedViewController {
+            return self.topViewController(presentedController)
 
-           }
+        }
 
-           return viewController
-       }
+        return viewController
+    }
 }
 
 extension UIWindow {

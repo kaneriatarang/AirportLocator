@@ -20,7 +20,6 @@ class RequestManager {
 
         let requestURL = "https://api.aerisapi.com/places/airports/closest/?p=\(latitude),\(longitude)&limit=5&radius=30miles&filter=all&client_id=AXTH9FQA1uSeAb3xVNpSd&client_secret=jsF5X3xAIxKcrWc833XYZR65Ng2Z36dqIYfSBSpJ"
 
-
         apiManager.requestData(isWithBaseUrl: false, url: requestURL, method: .get, parameters: nil, completion: { (result) in
 
             DispatchQueue.main.async {
@@ -44,7 +43,7 @@ class RequestManager {
                 case .failure(let failure) :
 
                     completion(.failure(failure))
-
+                    
                 }
             }
         })

@@ -38,6 +38,7 @@
 		457DD0EE2403C45000350F8F /* ErrorRespoance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457DD0ED2403C45000350F8F /* ErrorRespoance.swift */; };
 		457DD0F02403C4BB00350F8F /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457DD0EF2403C4BB00350F8F /* UIViewExtension.swift */; };
 		457DD0F22403D81E00350F8F /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457DD0F12403D81E00350F8F /* UIViewControllerExtension.swift */; };
+		457DD0F62404583C00350F8F /* UINavigationBarExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457DD0F52404583C00350F8F /* UINavigationBarExtension.swift */; };
 		55CC87D373325C47D1AD9A95 /* Pods_AirAsiaAirportLocator_AirAsiaAirportLocatorUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4C5124FCEABFF8DBC059900 /* Pods_AirAsiaAirportLocator_AirAsiaAirportLocatorUITests.framework */; };
 		926614D0A10C4CCEDBB93C4F /* Pods_AirAsiaAirportLocatorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6B42532B669194728828170 /* Pods_AirAsiaAirportLocatorTests.framework */; };
 		DEC8958E58139DB2C66140DC /* Pods_AirAsiaAirportLocator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9F36EA2E6BB1A1354F20DA5 /* Pods_AirAsiaAirportLocator.framework */; };
@@ -101,6 +102,7 @@
 		457DD0ED2403C45000350F8F /* ErrorRespoance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorRespoance.swift; sourceTree = "<group>"; };
 		457DD0EF2403C4BB00350F8F /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		457DD0F12403D81E00350F8F /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		457DD0F52404583C00350F8F /* UINavigationBarExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationBarExtension.swift; sourceTree = "<group>"; };
 		74C090754F123B17F71576C7 /* Pods-AirAsiaAirportLocatorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirAsiaAirportLocatorTests.release.xcconfig"; path = "Target Support Files/Pods-AirAsiaAirportLocatorTests/Pods-AirAsiaAirportLocatorTests.release.xcconfig"; sourceTree = "<group>"; };
 		B0D87BFA54CCD3DE50661AFB /* Pods-AirAsiaAirportLocator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirAsiaAirportLocator.release.xcconfig"; path = "Target Support Files/Pods-AirAsiaAirportLocator/Pods-AirAsiaAirportLocator.release.xcconfig"; sourceTree = "<group>"; };
 		B9F36EA2E6BB1A1354F20DA5 /* Pods_AirAsiaAirportLocator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AirAsiaAirportLocator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -236,6 +238,7 @@
 			children = (
 				457DD0EF2403C4BB00350F8F /* UIViewExtension.swift */,
 				457DD0F12403D81E00350F8F /* UIViewControllerExtension.swift */,
+				457DD0F52404583C00350F8F /* UINavigationBarExtension.swift */,
 			);
 			path = "03 UI Extensions";
 			sourceTree = "<group>";
@@ -604,6 +607,7 @@
 				457DD0F02403C4BB00350F8F /* UIViewExtension.swift in Sources */,
 				457DD0E42403B70A00350F8F /* AirportResponse.swift in Sources */,
 				457DD0BF2400489300350F8F /* LocationManagerConfigurable.swift in Sources */,
+				457DD0F62404583C00350F8F /* UINavigationBarExtension.swift in Sources */,
 				457DD0E62403B73800350F8F /* AirportPlace.swift in Sources */,
 				457DD0C5240049D500350F8F /* MapViewModel.swift in Sources */,
 				457DD0CB2401619F00350F8F /* DoubleExtension.swift in Sources */,

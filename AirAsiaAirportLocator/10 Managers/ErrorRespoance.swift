@@ -20,11 +20,6 @@ class APIError: Codable {
     let description: String
 }
 
-enum HomeError {
-    case internetError(String)
-    case serverMessage(String)
-}
-
 enum RequestError: Error {
     case unknownError
     case connectionError
@@ -34,4 +29,10 @@ enum RequestError: Error {
     case invalidResponse
     case serverError
     case serverUnavailable
+}
+
+// Error to display in View
+enum HomeError {
+    case internetError(String)
+    case serverMessage(String)
 }

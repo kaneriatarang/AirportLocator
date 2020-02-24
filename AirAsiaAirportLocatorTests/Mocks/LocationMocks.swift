@@ -9,6 +9,7 @@
 import MapKit
 @testable import AirAsiaAirportLocator
 
+// MARK: - Location Provider Mock
 class MockLocationProvider: LocationProvidable {
     var listener: LocationObservable?
 
@@ -25,6 +26,7 @@ class MockLocationProvider: LocationProvidable {
     }
 }
 
+// MARK: - Location Observable Mock
 class MockLocationObservable: LocationObservable {
     internal var coordinates: (Double, Double)?
     func setCurrentLocation(latitude: Double, longitude: Double) {
@@ -32,6 +34,7 @@ class MockLocationObservable: LocationObservable {
     }
 }
 
+// MARK: - Location Manager Mock
 class MockLocationManager: LocationManagerConfigurable {
     internal var callCount = 0
     fileprivate var delegate: LocationProvider?

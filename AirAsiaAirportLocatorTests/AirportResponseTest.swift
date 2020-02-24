@@ -9,6 +9,7 @@
 import XCTest
 @testable import AirAsiaAirportLocator
 
+// MARK: - AirportResponse Tests case
 class AirportResponseTest: XCTestCase {
 
     var jsonData: Data?
@@ -77,6 +78,7 @@ class AirportResponseTest: XCTestCase {
         jsonData = nil
     }
 
+    // Test Airport response Decoding from json data
     func testContactObjectParsing() {
         let response = try? JSONDecoder().decode(AirportResponse.self, from: jsonData!)
         XCTAssertNotNil(response)

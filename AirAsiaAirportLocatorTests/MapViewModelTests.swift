@@ -12,7 +12,7 @@ import Nimble
 import CoreLocation
 @testable import AirAsiaAirportLocator
 
-
+// MARK: - MapViewModel Tests case
 class MapViewModelTests: QuickSpec {
 
     override func spec() {
@@ -29,10 +29,11 @@ class MapViewModelTests: QuickSpec {
                 let mockViewController = MocMapViewController()
                 viewModel =
                     MapViewModel(locationProvider: mockLocationProvider,
-                                         requestManager: mockRequest,
-                                         listener:mockViewController)
+                                 requestManager: mockRequest,
+                                 listener:mockViewController)
             }
 
+            // Test Current Location in ViewModel
             it("get current location", closure: {
                 if let (lat, lon) = viewModel?.getCurrentLocation() {
                     expect(lat).to(equal(12.909))
@@ -40,6 +41,7 @@ class MapViewModelTests: QuickSpec {
                 }
             })
 
+            // Test AirportList and first Airport Data
             it("should get all amenities in range", closure: {
 
                 viewModel?.getAirports()

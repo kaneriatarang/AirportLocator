@@ -25,16 +25,6 @@ class LocationProvider: NSObject, LocationProvidable, CLLocationManagerDelegate 
         self.locationManager = locationManager
     }
 
-//    func startLocationUpdates() {
-//        if (CLLocationManager.locationServicesEnabled())
-//        {
-//            locationManager.setDelegate(to: self)
-//            locationManager.setDesiredAccuracy(to: kCLLocationAccuracyBest)
-//            locationManager.requestAlwaysAuthorization()
-//            locationManager.startUpdatingLocation()
-//        }
-//    }
-
     func startLocationUpdates () {
         if CLLocationManager.locationServicesEnabled() {
             locationManager.setDelegate(to: self)

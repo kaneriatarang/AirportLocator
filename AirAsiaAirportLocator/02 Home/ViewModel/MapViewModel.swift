@@ -41,7 +41,7 @@ class MapViewModel<S:MapViewModelObservable>: MapViewModelConfirming, LocationOb
     var onError : ((HomeError)->Void)?
 
 
-    // Inject the dependencies in ctor
+    // Inject the dependencies in controller
     init(locationProvider: LocationProvidable, requestManager: RequestManager, listener: S) {
         self.locationProvider = locationProvider
         self.locationProvider.startLocationUpdates()
@@ -87,11 +87,9 @@ class MapViewModel<S:MapViewModelObservable>: MapViewModelConfirming, LocationOb
                     strongSelf.onError?(.internetError("Check your Internet connection."))
 
                 case .authorizationError(let errorResponse):
-
                     strongSelf.onError?(.serverMessage(errorResponse?.description ?? ""))
 
                 default:
-
                     strongSelf.onError?(.serverMessage("Unknown Error"))
 
                 }

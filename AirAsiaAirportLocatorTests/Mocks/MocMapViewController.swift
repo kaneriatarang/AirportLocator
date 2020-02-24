@@ -9,7 +9,9 @@
 import Foundation
 @testable import AirAsiaAirportLocator
 
+// MARK: - MapViewController Mock
 class MocMapViewController: MapViewModelObservable {
+
     func centerMapToCurrentLocation(latitude: Double, longitude: Double) {
 
     }

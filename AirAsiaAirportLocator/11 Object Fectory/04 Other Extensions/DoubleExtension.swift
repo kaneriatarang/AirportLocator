@@ -10,9 +10,9 @@ import Foundation
 import MapKit
 
 extension Double {
-  func convert(from originalUnit: UnitLength, to convertedUnit: UnitLength) -> Double {
-    return Measurement(value: self, unit: originalUnit).converted(to: convertedUnit).value
-  }
+    func convert(from originalUnit: UnitLength, to convertedUnit: UnitLength) -> Double {
+        return Measurement(value: self, unit: originalUnit).converted(to: convertedUnit).value
+    }
 }
 
 extension CLLocationDistance {
@@ -29,15 +29,4 @@ extension CLLocationDistance {
         return self.convert(from: .miles, to: .meters)
     }
 
-}
-
-extension UINavigationBar {
-
-    /// Changes the navigation bar title color
-    ///
-    /// - Parameter color: Title color
-    func setTitltColor (_ color: UIColor) {
-        titleTextAttributes = [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 18),
-                               NSAttributedString.Key.foregroundColor: color]
-    }
 }
